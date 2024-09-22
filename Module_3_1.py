@@ -9,9 +9,8 @@ def string_info(x):
     return x
 def is_contains(k,l):
     for i in range(len(l)):
-        l.append(l[i].upper())
         l.append(l[i].lower())
-    if k.upper() in l or k.lower() in l:
+    if k.lower() in l:
         is_contains_ = True
     else:
         is_contains_ = False
